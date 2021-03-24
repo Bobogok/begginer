@@ -3,24 +3,16 @@ var wallaper = 500;
 var b = "";
 
 while (wallaper > 5) {
-    b = b + wallaper + " четное <br> ";
-    
-    if (wallaper>5) {
-        b = b + (wallaper-1)
-            + " нечетное <br> ";
+
+    if (wallaper % 2) {
+        b = b + wallaper + " нечетное <br>";
     }
 
     else {
-        b = b + " все <br> ";
+        b = b + wallaper + " четное <br>";
     }
 
-   wallaper = wallaper - 2;
+   wallaper = wallaper - 1;
 
 }
-
-
-
-
-
-
-document.write(b) ;
+document.write(b);
